@@ -1,0 +1,7 @@
+{
+    "parameters":{
+        "ImagePath":"C:\\CuiHelperContents\\img\\",
+        "ContentsPath": "C:\\CuiHelperContents\\",
+        "PrimayKey" : "Please Your Primary Key"
+     }
+}

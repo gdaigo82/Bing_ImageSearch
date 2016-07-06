@@ -1,0 +1,49 @@
+﻿<Window x:Class="BingImageSearch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BingImageSearch"
+        mc:Ignorable="d"
+        Icon="/BingImageSearch;component/BirdGreen.ico"
+        Title="Bingで画像をサーチ" Height="720" Width="1024"
+        AllowDrop="True" Drop="WindowDrop" PreviewDragOver="WindowPreviewDragOver">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <WebBrowser x:Name="m_OutputBrowser" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="0" Grid.RowSpan="11"/>
+        <TextBox x:Name="m_InputTextBox" KeyDown="OnKeyDownHandler" FontSize="20" Margin="5,5,5,5" Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="11" Grid.RowSpan="1"/>
+        <ComboBox x:Name="m_InputComboBox" VerticalContentAlignment="Center" FontSize="20" Margin="0,5,0,5" Grid.Column="6" Grid.ColumnSpan="3" Grid.Row="11" Grid.RowSpan="1"/>
+        <Button x:Name="m_CommandButton" Click="ClickGo" VerticalContentAlignment="Center" FontSize="20" Margin="0,5,5,5" Grid.Column="9" Grid.ColumnSpan="1" Grid.Row="11" Grid.RowSpan="1">GO</Button>
+        <Image x:Name="m_BotImage" Source="{Binding BotImageData}" Margin="5,5,5,5" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="12" Grid.RowSpan="4"/>
+        <TextBox x:Name="m_CommentTextBox" IsReadOnly="True" Text="{Binding CommentText}" FontSize="20" Margin="0,5,5,5" Grid.Column="2" Grid.ColumnSpan="8" Grid.Row="12" Grid.RowSpan="4"/>
+    </Grid>
+</Window>
