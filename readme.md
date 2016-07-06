@@ -2,7 +2,7 @@
 ====
 
 詳細はQiitaに書かせていただきました。
-<<<URL>>>
+http://qiita.com/GDaigo/items/7392d12a5fe6f2e18846
 
 ## 主なライセンス
 
